@@ -1,0 +1,8 @@
+oneway.test(PC1 ~ Biogeography,data = all_pop_diversity,var.equal = TRUE)
+oneway.test(He ~ Biogeography,data = all_pop_diversity,var.equal = TRUE)
+oneway.test(Pi ~ Biogeography,data = all_pop_diversity,var.equal = TRUE)
+oneway.test(Theta ~ Biogeography,data = all_pop_diversity,var.equal = TRUE)
+with(all_pop_diversity,pairwise.t.test(PC1, Biogeography, pool.sd=FALSE, p.adjust.method="none"))
+with(all_pop_diversity,pairwise.t.test(He, Biogeography, pool.sd=FALSE, p.adjust.method="none"))
+with(all_pop_diversity,pairwise.t.test(Pi, Biogeography, pool.sd=FALSE, p.adjust.method="none"))
+with(all_pop_diversity,pairwise.t.test(Theta, Biogeography, pool.sd=FALSE, p.adjust.method="none"))
